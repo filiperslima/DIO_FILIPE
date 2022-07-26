@@ -1,0 +1,23 @@
+{
+  "name": "dio_filipe",
+  "version": "1.0.0",
+  "description": "MEU PROJETO DIO",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filiperslima/DIO_FILIPE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filiperslima/DIO_FILIPE/issues"
+  },
+  "homepage": "https://github.com/filiperslima/DIO_FILIPE#readme",
+  "dependencies": {
+    "angular": "^1.8.3",
+    "bootstrap": "^5.2.0"
+  }
+}

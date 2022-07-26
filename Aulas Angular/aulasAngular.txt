@@ -1,0 +1,33 @@
+Angular é modular, mesmo que a gente não escreva nada, ele já possui seus próprios módulos raiz.
+O modulo é o limitador de contexto, onde teremos uma série de elementos que são intrísecos ao ccontexto desse mídulo.
+São os componentes (app.components.ts) que vão dar vida a esse módulo (app.module.ts), os elementos.
+
+Em app.component.ts, o styleUrls: ['./app.component.css'] -> Indica o estilo que será utilizado para o módulo.
+Em app.component.ts o templateUrl: './app.component.html' -> HTML que será utilizado para representar a parte visual de nosso componente.
+Em app.component.ts o selector: 'app-root' -> Cria uma tag no HTML. quando o Angular vir 
+no HTML essa tag, vai buscar em seus arquivos esta tag para trazer os itens para visualizar os elementos.
+
+Basicamente na pasta app teremos esses arquivos que vão fazer jus ao App. São todos os estilos, marcações, funcionalidades, etc. destrinchadas nos arquivos.
+
+oneWay dataBiding -> Vincula um dado em uma via única. Se um input está vinculado a um dado, 
+somente o input receberá seu valor, mas poderei alterar o valor do input e nada acontecerá com o outro dado.
+Exp <input [modulo]="nome" name="nome"> Aqui o input terá, dentro dele, o valor do que peguei em [modulo]. Posso alterar o valor do input.
+Contudo, o valor do [modulo]="nome" permanecerá o mesmo
+
+twoWay dataBiding -> Vincula um dado de uma forma de mão dupla. Vinculo um input a um dado e agora, se eu alterar o dado ou o input, cada um recebe o novo valor.
+Exp <input [(modulo)]="nome" name="nome"> -> Aqui o input terá o valor do dado("nome"), mas se eu alterar o input, altero o dado tmb.
+
+importar módulo forms:
+Vai em app.module.ts
+1- cria um import
+import { FormsModule } from '@angular/forms';
+2- vai em imports: [
+    
+]
+3 - Adiciona o FormsModule
+imports: [
+    FormsModule
+]
+OBS: Esse módulo será importado para todos os nossos componentes, pois está sendo importado no módulo raiz.
+
+

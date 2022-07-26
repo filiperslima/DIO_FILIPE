@@ -1,0 +1,20 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+#contador {
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+    align-items: center;
+}
+button {
+    width: 4%;
+    height: 3rem;
+    background-color: blueviolet;
+    border-radius: 60%;
+}
+span {
+    font-size: 10rem;
+}

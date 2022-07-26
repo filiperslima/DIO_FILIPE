@@ -1,0 +1,20 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 1920px;
+    background-color: #634b66;
+
+}
+#container {
+    display: grid;
+    max-height: 1920px;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 1.2rem;
+
+    
+}

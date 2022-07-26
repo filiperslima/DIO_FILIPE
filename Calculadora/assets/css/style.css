@@ -1,0 +1,29 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+body {
+    max-width: 50%;
+    height: 50%;
+}
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:25px;
+}
+button {
+    padding: 2rem;
+}
+#display {
+    grid-row:1;
+    grid-area: 1 / 2 / 3 / 4;
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    border: 1px solid #696969;
+    width: 40vw;
+    height: 10vh;
+    text-align: right;
+    font-size: 4rem;
+}
